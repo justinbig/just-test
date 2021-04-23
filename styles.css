@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+ul,ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+/* HEAD */
+header {
+    background: tomato
+}
+.main-nav {
+    display: flex;
+}
+li {
+    padding: 10px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width:100%;
+
+}
+
+/* pushing nav element in the left corner which is contacts */
+.push {
+    margin-left: auto;
+}
+/* LAYOUT STYLES */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: aquamarine;
+
+}
+
+/* media queryies */
+@media (max-width: 600px) {
+    a {
+        font-size: 12px;
+    }
+} 
+.box  img {
+    width: 100%;
+}
+/*  GRID*/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 15px;
+}
+.zone {
+    background:#eee;
+}
+.zone .box.zone {
+    background: #444;
+    padding: 90px;
+    margin: 10px;
+}
+
+
+/* FOOTER STYLING */
+footer {
+    
+    padding: 10px;
+    text-align: center;
+    border-bottom: 10px solid #444;
+}
+footer p {
+    color: tomato;
+    font-weight: bold;
+}
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: yellow; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blue; 
+}
